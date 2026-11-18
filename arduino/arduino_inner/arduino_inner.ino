@@ -14,7 +14,7 @@
 
 #define PANEL_INNER 1
 #define FW_PANEL "inner"
-#define FW_VERSION "1"
+#define FW_VERSION "2"
 
 static const char FW_MARK[] = "hayali-firmware:" FW_PANEL ":" FW_VERSION;
 
@@ -37,7 +37,7 @@ static const uint8_t GENIE_USER_BUTTON = 33;
 
 static const char* DEFAULT_SSID = HAYALI_WIFI_SSID;
 static const char* DEFAULT_PASS = HAYALI_WIFI_PASS;
-static const char* DEFAULT_HOST = "192.168.0.195";
+static const char* DEFAULT_HOST = HAYALI_SERVER_HOST;
 static const uint16_t DEFAULT_PORT = 8001;
 
 static const unsigned long HOLD_SECONDS = 20;
@@ -1054,7 +1054,7 @@ static void handleLine(char* line) {
     char host[64];
     int port = cfg.port;
     if (sscanf(line + 7, "%63s %d", host, &port) < 1 || !validHost(host) || port < 1 || port > 65535) {
-      Serial.println("Use: server 192.168.0.195 8001");
+      Serial.println("Use: server " HAYALI_SERVER_HOST " 8001");
       return;
     }
     copyText(cfg.host, sizeof(cfg.host), host);
