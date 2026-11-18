@@ -130,8 +130,11 @@ static void loadSettings() {
   if (!prefs.isKey("ssid") || !prefs.getString("ssid", cfg.ssid, sizeof(cfg.ssid))) {
     copyText(cfg.ssid, sizeof(cfg.ssid), DEFAULT_SSID);
   }
-  if (!prefs.isKey("pass") || !prefs.getString("pass", cfg.pass, sizeof(cfg.pass))) {
+  // An open network saves an empty password, which must not fall back to the default.
+  if (!prefs.isKey("pass")) {
     copyText(cfg.pass, sizeof(cfg.pass), DEFAULT_PASS);
+  } else if (!prefs.getString("pass", cfg.pass, sizeof(cfg.pass))) {
+    cfg.pass[0] = 0;
   }
   if (!prefs.isKey("host") || !prefs.getString("host", cfg.host, sizeof(cfg.host))) {
     copyText(cfg.host, sizeof(cfg.host), DEFAULT_HOST);
