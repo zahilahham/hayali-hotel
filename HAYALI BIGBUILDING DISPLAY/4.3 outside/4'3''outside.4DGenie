@@ -1,0 +1,301 @@
+﻿Version     0.0
+Platform    uLCD-43PT-LR
+PlatRes     272x480
+Depends
+end
+Options
+    Genie
+    Speed                        115200
+    Checksum                     No
+    ResponseSize                 2
+    Multidrop                    No
+    Destination                  1
+    DestBank                     0
+    MainForm                     1
+    SndBuf                       0
+    ButtonDisable                No
+    SignedDigits                 No
+end
+Form
+    Name                         Form0
+    Alias                        Form0
+    Bgtype                       Image
+    Color                        BLACK
+    Image                        'Hayali Hotel Logos 320.gif'
+    Source.Height                230
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 320
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext4
+    Alias                        Statictext4
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      1023
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    'ZapfHumnst BT'
+    Font.Size                    70
+    Font.Style                   []
+    Height                       116
+    Left                         132
+    Top                          8
+    Transparent                  Yes
+    Width                        204
+    WordWrap                     Yes
+end
+AniButton
+    Name                         Anibutton21
+    Alias                        Anibutton21
+    Height                       62
+    Images                       'Bell Black.gif\nBell Black.gif\nBell Black Dim.gif\nBell Black Dim.gif'
+    Interval                     100
+    Left                         200
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      Yes
+    Top                          164
+    Width                        65
+    OnChanged                    'Report Message'
+end
+UserImages
+    Name                         Userimages0
+    Alias                        Userimages0
+    Height                       5
+    Images                       'Bars Blank.gif\nBars Blue.jpg\nBars Green.jpg\nBars Red.jpg\nBars White.jpg\nBars Purple.jpg\nBars Cyan.jpg\nBars Green-White.gif\nBars Cyan-Purple.gif'
+    Left                         46
+    Stretch                      Yes
+    Top                          130
+    Width                        388
+    OnChanged                    ''
+end
+Form
+    Name                         Form1
+    Alias                        Form1
+    Bgtype                       Image
+    Color                        BLACK
+    Image                        'Hayali Hotel Logos 320.gif'
+    Source.Height                230
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 320
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext0
+    Alias                        Statictext0
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'Do Not Disturb / Make up Room / Laundry Pickup'
+    Color                        BLACK
+    Font.Color                   GRAY
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   [Italic]
+    Height                       16
+    Left                         104
+    Top                          228
+    Transparent                  Yes
+    Width                        271
+    WordWrap                     Yes
+end
+UserButton
+    Name                         Userbutton8
+    Alias                        Userbutton8
+    Height                       78
+    Images                       'Button DND OFF.gif\nButton DND ON.gif\nButton DND ON.gif\nButton DND OFF.gif'
+    Left                         88
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      No
+    Top                          96
+    Width                        78
+    OnChanged                    'Report Message'
+end
+UserButton
+    Name                         Userbutton9
+    Alias                        Userbutton9
+    Height                       78
+    Images                       'Button MUR2 OFF.gif\nButton MUR2 ON.gif\nButton MUR2 ON.gif\nButton MUR2 OFF.gif'
+    Left                         200
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      No
+    Top                          92
+    Width                        78
+    OnChanged                    'Report Message'
+end
+UserButton
+    Name                         Userbutton0
+    Alias                        Userbutton0
+    Height                       78
+    Images                       'But LPU OFF.gif\nbut LPU ON.gif\nbut LPU ON.gif\nBut LPU OFF.gif'
+    Left                         316
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      No
+    Top                          88
+    Width                        78
+    OnChanged                    'Report Message'
+end
+Form
+    Name                         Form2
+    Alias                        Form2
+    Bgtype                       Image
+    Color                        BLACK
+    Image                        'Hayali Hotel Logos 320.gif'
+    Source.Height                230
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 320
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext5
+    Alias                        Statictext5
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'House Keeping, Engineering Messages'
+    Color                        BLACK
+    Font.Color                   GRAY
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   [Italic]
+    Height                       14
+    Left                         16
+    Top                          41
+    Transparent                  Yes
+    Width                        205
+    WordWrap                     Yes
+end
+Rectangle
+    Name                         Rectangle5
+    Alias                        Rectangle5
+    Color                        0x323232
+    Filled                       Yes
+    Height                       2
+    Left                         10
+    Outlined                     No
+    OutlineColor                 WHITE
+    Pattern                      Fine
+    Top                          58
+    Width                        400
+end
+AniButton
+    Name                         Anibutton22
+    Alias                        Anibutton22
+    Height                       51
+    Images                       'But Backward ON.gif\nBut Backward ON.gif\nBut Backward OFF.gif\nBut Backward OFF.gif'
+    Interval                     100
+    Left                         420
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      Yes
+    Top                          4
+    Width                        51
+    OnChanged                    'Report Message'
+end
+AniButton
+    Name                         Anibutton23
+    Alias                        Anibutton23
+    Height                       54
+    Images                       'Roo OFF.gif\nRoo OFF.gif\nRoo ON.gif\nRoo ON.gif'
+    Interval                     100
+    Left                         20
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      Yes
+    Top                          70
+    Width                        204
+    OnChanged                    'Report Message'
+end
+AniButton
+    Name                         Anibutton25
+    Alias                        Anibutton25
+    Height                       54
+    Images                       'LaP OFF.gif\nLaP OFF.gif\nLaP ON.gif\nLaP ON.gif'
+    Interval                     100
+    Left                         250
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      Yes
+    Top                          70
+    Width                        204
+    OnChanged                    'Report Message'
+end
+AniButton
+    Name                         Anibutton27
+    Alias                        Anibutton27
+    Height                       54
+    Images                       'Min OFF.gif\nMin OFF.gif\nMin ON.gif\nMin ON.gif'
+    Interval                     100
+    Left                         20
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      No
+    Top                          140
+    Width                        204
+    OnChanged                    'Report Message'
+end
+AniButton
+    Name                         Anibutton28
+    Alias                        Anibutton28
+    Height                       54
+    Images                       'LaD OFF.gif\nLaD OFF.gif\nLaD ON.gif\nLaD ON.gif'
+    Interval                     100
+    Left                         250
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      No
+    Top                          140
+    Width                        204
+    OnChanged                    'Report Message'
+end
+AniButton
+    Name                         Anibutton29
+    Alias                        Anibutton29
+    Height                       54
+    Images                       'Tow OFF.gif\nTow OFF.gif\nTow ON.gif\nTow ON.gif'
+    Interval                     100
+    Left                         20
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      No
+    Top                          210
+    Width                        204
+    OnChanged                    'Report Message'
+end
+AniButton
+    Name                         Anibutton31
+    Alias                        Anibutton31
+    Height                       54
+    Images                       'Pro OFF.gif\nPro OFF.gif\nPro ON.gif\nPro ON.gif'
+    Interval                     100
+    Left                         250
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      No
+    Top                          210
+    Width                        204
+    OnChanged                    'Report Message'
+end

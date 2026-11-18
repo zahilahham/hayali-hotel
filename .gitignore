@@ -1,0 +1,27 @@
+backend/.env
+backend/.venv/
+__pycache__/
+*.pyc
+
+frontend/node_modules/
+frontend/dist/
+
+# Wi-Fi for the boards. Each sketch folder has a secrets.example.h to copy.
+arduino/**/secrets.h
+arduino/secrets.h
+*.bin
+*.elf
+build/
+
+# Prices and quotations stay off the public repo.
+*.xlsx
+docs/*quotation*
+
+# Vendor USB driver installer.
+HAYALI BIGBUILDING DISPLAY/Driver/
+
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+*.lnk

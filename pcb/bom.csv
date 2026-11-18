@@ -1,0 +1,23 @@
+Item,Qty,Ref,Value / MPN hint,Footprint,Notes
+1,1,J_USB,USB-C receptacle 16P mid-mount,USB-C-16P,Power + programming
+2,2,R_CC1 R_CC2,5.1k 1%,0603,CC pull-downs for 5V sink
+3,1,F1,PTC resettable ~1.5A 6V,SMD,VBUS protection
+4,1,D1,TVS 5V bidirectional (e.g. SMAJ5.0A or USB TVS),SMA/SOD,VBUS_F
+5,1,U_ESD,USBLC6-2P6 or equiv,SOT-666/DFN,D+/D- ESD
+6,1,U_REG,3.3V LDO/buck >=600mA (prefer AMS1117-3.3 only if thermal OK; better: AP2112/RT9013 or small buck),SOT-223/SOT-23-5,From VBUS_F
+7,1,C_IN,10uF 16V X5R,0805,Regulator input
+8,1,C_OUT,22uF 10V X5R,0805,3V3 bulk
+9,2,C_DEC,100nF 50V,0402/0603,ESP32 + bridge
+10,1,C_WIFI,47uF 10V,0805/1206,Near ESP32 3V3
+11,1,U_ESP,ESP32-WROOM-32E 4MB,WROOM-32 footprint,PCB antenna keep-out
+12,1,U_USB,CP2102N-A02-GQFN28,QFN-28,USB-UART; CH340C alt
+13,2,C_AR,100nF,0402,Auto-reset EN/GPIO0 network
+14,2,R_PU,10k,0402,EN and GPIO0 pull-up
+15,1,SW_BOOT,TACT 6x6,TH/SMD,GPIO0 to GND
+16,1,SW_RST,TACT 6x6 optional,TH/SMD,EN to GND
+17,1,J_DISP,Female 1x5 2.54mm right-angle,PTH,Mates gen4 5-way
+18,1,LED_PWR,LED green 0603 + 1k,0603,Power
+19,1,LED_ACT,LED blue 0603 + 1k optional,0603,Activity GPIO
+20,1,J_DBG,1x6 2.54mm male or pads,PTH/pads,3V3 GND EN IO0 TX0 RX0
+21,2,R_UART,22 ohm optional,0402,Series on DISP_TX/RX
+22,1,PCB,HAYALI-GW-USB-C-R1,see mechanical,FR-4 1.6mm

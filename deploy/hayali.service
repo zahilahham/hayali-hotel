@@ -1,0 +1,20 @@
+[Unit]
+Description=Hayali Boutique room server
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=hayali
+Group=hayali
+WorkingDirectory=/opt/hayali/backend
+Environment=PYTHONUNBUFFERED=1
+Environment=TZ=Asia/Baghdad
+EnvironmentFile=-/opt/hayali/backend/.env
+# One process. Do not add --workers: the room screens wait inside this process.
+ExecStart=/opt/hayali/backend/.venv/bin/python -m uvicorn main:app --host 0.0.0.0 --port 8001 --timeout-graceful-shutdown 15 --no-access-log
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

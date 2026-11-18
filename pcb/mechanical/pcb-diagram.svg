@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620">
+  <title>HAYALI-GW-USB-C-R1 PCB diagram</title>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect width="900" height="620" fill="#f8fafc"/>
+  <text x="32" y="36" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#0f172a">HAYALI-GW-USB-C-R1 - PCB top view</text>
+  <text x="32" y="58" font-family="Segoe UI, sans-serif" font-size="13" fill="#475569">Conceptual layout (~48 x 32 mm). Not manufacturing Gerbers.</text>
+
+  <rect x="620" y="18" width="14" height="14" fill="#166534" stroke="#0f172a"/>
+  <text x="642" y="30" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">PCB</text>
+  <rect x="680" y="18" width="14" height="14" fill="#fbbf24" stroke="#0f172a"/>
+  <text x="702" y="30" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">Connectors</text>
+  <rect x="790" y="18" width="14" height="14" fill="#1e293b" stroke="#0f172a"/>
+  <text x="812" y="30" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">Modules</text>
+
+  <rect x="120" y="80" width="520" height="36" rx="4" fill="#e2e8f0" stroke="#94a3b8"/>
+  <text x="140" y="103" font-family="Segoe UI, sans-serif" font-size="13" fill="#334155">gen4 display rear (7 inch or 4.3 inch) - 5-way male pins mate here</text>
+
+  <rect x="120" y="130" width="520" height="360" rx="14" fill="#166534" stroke="#0f172a" stroke-width="2"/>
+
+  <circle cx="150" cy="160" r="9" fill="#f8fafc" stroke="#0f172a"/>
+  <circle cx="610" cy="160" r="9" fill="#f8fafc" stroke="#0f172a"/>
+  <circle cx="150" cy="460" r="9" fill="#f8fafc" stroke="#0f172a"/>
+  <circle cx="610" cy="460" r="9" fill="#f8fafc" stroke="#0f172a"/>
+  <text x="138" y="148" font-family="Consolas, monospace" font-size="10" fill="#dcfce7">M2.5</text>
+
+  <rect x="250" y="118" width="260" height="34" rx="3" fill="#fbbf24" stroke="#0f172a" stroke-width="1.5"/>
+  <g font-family="Consolas, monospace" font-size="11" fill="#0f172a">
+    <text x="262" y="139">1 RESET</text>
+    <text x="330" y="139">2 GND</text>
+    <text x="385" y="139">3 RX0</text>
+    <text x="440" y="139">4 TX0</text>
+    <text x="495" y="139">5 5V</text>
+  </g>
+  <text x="250" y="110" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#0f172a">J_DISP female 1x5 - plugs onto screen</text>
+
+  <path d="M 520 152 L 520 200 L 200 200 L 200 230" fill="none" stroke="#fde68a" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="210" y="195" font-family="Consolas, monospace" font-size="11" fill="#fef9c3">VBUS 5V</text>
+
+  <rect x="160" y="230" width="100" height="50" rx="4" fill="#14532d" stroke="#dcfce7"/>
+  <text x="175" y="252" font-family="Consolas, monospace" font-size="12" fill="#dcfce7">F1 1.5A</text>
+  <text x="175" y="268" font-family="Consolas, monospace" font-size="11" fill="#bbf7d0">polyfuse</text>
+
+  <rect x="160" y="300" width="100" height="50" rx="4" fill="#14532d" stroke="#dcfce7"/>
+  <text x="175" y="322" font-family="Consolas, monospace" font-size="12" fill="#dcfce7">U_REG</text>
+  <text x="175" y="338" font-family="Consolas, monospace" font-size="11" fill="#bbf7d0">5V to 3.3V</text>
+
+  <rect x="160" y="370" width="100" height="55" rx="4" fill="#1e293b" stroke="#e2e8f0"/>
+  <text x="172" y="393" font-family="Consolas, monospace" font-size="12" fill="#f8fafc">CP2102N</text>
+  <text x="172" y="410" font-family="Consolas, monospace" font-size="10" fill="#cbd5e1">USB-UART</text>
+
+  <rect x="320" y="230" width="220" height="140" rx="6" fill="#1e293b" stroke="#f8fafc" stroke-width="1.5"/>
+  <rect x="500" y="245" width="28" height="110" fill="#334155" stroke="#94a3b8"/>
+  <text x="340" y="270" font-family="Consolas, monospace" font-size="14" fill="#f8fafc">ESP32-WROOM-32E</text>
+  <text x="340" y="295" font-family="Consolas, monospace" font-size="12" fill="#94a3b8">Wi-Fi to UniFi AP</text>
+  <text x="340" y="320" font-family="Consolas, monospace" font-size="12" fill="#86efac">GPIO16 RX2  &lt;- TX0</text>
+  <text x="340" y="340" font-family="Consolas, monospace" font-size="12" fill="#86efac">GPIO17 TX2  -&gt; RX0</text>
+  <text x="505" y="305" font-family="Consolas, monospace" font-size="10" fill="#e2e8f0">ANT</text>
+
+  <path d="M 430 230 L 430 152" fill="none" stroke="#86efac" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="438" y="200" font-family="Consolas, monospace" font-size="10" fill="#86efac">UART</text>
+
+  <circle cx="580" cy="400" r="10" fill="#22c55e" stroke="#0f172a"/>
+  <text x="560" y="425" font-family="Consolas, monospace" font-size="10" fill="#dcfce7">PWR</text>
+  <circle cx="580" cy="450" r="10" fill="#38bdf8" stroke="#0f172a"/>
+  <text x="560" y="475" font-family="Consolas, monospace" font-size="10" fill="#dcfce7">ACT</text>
+
+  <rect x="300" y="455" width="160" height="40" rx="10" fill="#fbbf24" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="330" y="480" font-family="Consolas, monospace" font-size="13" fill="#0f172a">J_USB  USB-C</text>
+  <text x="300" y="515" font-family="Segoe UI, sans-serif" font-size="12" fill="#0f172a">One cable: powers ESP32 + screen</text>
+
+  <rect x="670" y="150" width="200" height="300" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="690" y="180" font-family="Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Signal flow</text>
+  <text x="690" y="210" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">1. USB-C 5V in</text>
+  <text x="690" y="235" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">2. Fuse to DISP 5V</text>
+  <text x="690" y="260" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">3. LDO makes 3.3V</text>
+  <text x="690" y="285" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">4. ESP32 Wi-Fi</text>
+  <text x="690" y="310" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">5. UART to Genie</text>
+  <text x="690" y="350" font-family="Segoe UI, sans-serif" font-size="12" fill="#334155">Fits:</text>
+  <text x="690" y="375" font-family="Consolas, monospace" font-size="12" fill="#166534">gen4-uLCD-70DT</text>
+  <text x="690" y="395" font-family="Consolas, monospace" font-size="12" fill="#166534">gen4-uLCD-43DT</text>
+  <text x="690" y="425" font-family="Segoe UI, sans-serif" font-size="12" fill="#64748b">Same 5-way pinout</text>
+
+  <text x="32" y="580" font-family="Segoe UI, sans-serif" font-size="12" fill="#64748b">File: pcb/mechanical/pcb-diagram.svg - Full pack: pcb/README.md</text>
+</svg>

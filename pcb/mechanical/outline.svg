@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" width="520" height="380">
+  <title>HAYALI-GW-USB-C-R1 outline (not to manufacturing scale)</title>
+  <style>
+    .board { fill: #1a5c3a; stroke: #0d2e1c; stroke-width: 2; }
+    .label { font-family: Consolas, monospace; font-size: 12px; fill: #e8f5ee; }
+    .title { font-family: Segoe UI, sans-serif; font-size: 16px; fill: #102018; font-weight: 600; }
+    .note { font-family: Segoe UI, sans-serif; font-size: 11px; fill: #334; }
+    .mod { fill: #2a2a2a; stroke: #111; }
+    .ant { fill: #3d3d3d; }
+    .usb { fill: #c0c4c8; stroke: #555; }
+    .hdr { fill: #f0c040; stroke: #8a6a10; }
+    .hole { fill: #f5f5f0; stroke: #333; }
+  </style>
+
+  <text x="20" y="28" class="title">HAYALI-GW-USB-C-R1 - conceptual outline (48 x 32 mm)</text>
+  <text x="20" y="48" class="note">Not a Gerber. Manufacturer must create CAD from schematic + measured 5-way position.</text>
+
+  <rect x="80" y="90" width="360" height="220" rx="12" class="board"/>
+
+  <g transform="translate(180,78)">
+    <rect x="0" y="0" width="160" height="22" rx="2" class="hdr"/>
+    <text x="8" y="15" class="label" style="fill:#222;font-size:10px">J_DISP 1x5  (1=RESET ... 5=5V)</text>
+  </g>
+  <text x="200" y="70" class="note">plugs onto gen4 7 inch / 4.3 inch 5-way</text>
+
+  <g transform="translate(200,140)">
+    <rect x="0" y="0" width="140" height="90" rx="4" class="mod"/>
+    <rect x="100" y="10" width="30" height="70" class="ant"/>
+    <text x="12" y="40" class="label">ESP32-WROOM</text>
+    <text x="12" y="58" class="label" style="font-size:10px">GPIO16/17 UART</text>
+    <text x="105" y="50" class="label" style="font-size:9px">ANT</text>
+  </g>
+
+  <g transform="translate(200,285)">
+    <rect x="0" y="0" width="120" height="28" rx="6" class="usb"/>
+    <text x="28" y="18" class="label" style="fill:#222">USB-C 5V</text>
+  </g>
+  <text x="200" y="330" class="note">single cable powers gateway + screen</text>
+
+  <circle cx="100" cy="110" r="6" class="hole"/>
+  <circle cx="400" cy="110" r="6" class="hole"/>
+  <circle cx="100" cy="280" r="6" class="hole"/>
+  <circle cx="400" cy="280" r="6" class="hole"/>
+  <text x="90" y="100" class="note">M2.5</text>
+
+  <text x="95" y="200" class="label">3V3 REG</text>
+  <text x="95" y="240" class="label">CP2102N</text>
+  <text x="340" y="250" class="label">LED</text>
+</svg>
